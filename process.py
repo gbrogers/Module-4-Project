@@ -10,3 +10,13 @@ def sales_reports(log_file): # this is a function named 'sales_reports'
 
 
 sales_reports(log_file) # calls the sales_reports function with the data assigned to the log_file variable assigned on line 1.
+
+#FURTHER STUDY
+log_file.close()
+
+log_file = open("um-server-01.txt") 
+for row in log_file:
+    row = row.rstrip().split(' ')
+    if int(row[2]) > 10:
+     print(row)
+log_file.close()
